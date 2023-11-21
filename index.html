@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     
+    <!-- vue -->
+     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+</head>
+<body>
+    <div id="app">
+        <button @click="generateEmail">Genera E-mail</button>
+        <ol>
+            <li v-for="email in randomEmail" >{{ email }}</li>
+        </ol>
+    </div>
+    
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- js -->
+    <script src="js/script.js"></script>
+</body>
+</html>

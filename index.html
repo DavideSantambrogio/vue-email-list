@@ -12,7 +12,7 @@
 <body>
     <div id="app">
         <button @click="generateEmail">Genera E-mail</button>
-        <ol>
+        <ol v-if="randomEmail.length === 10">
             <li v-for="email in randomEmail" >{{ email }}</li>
         </ol>
     </div>
@@ -23,4 +23,4 @@
     <!-- js -->
     <script src="js/script.js"></script>
 </body>
-</html>
+</html>-
